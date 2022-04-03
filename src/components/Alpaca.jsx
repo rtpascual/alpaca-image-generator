@@ -5,6 +5,9 @@ import { getImage } from "../utils/getImage";
 import AlpacaOption from "./AlpacaOption";
 import AlpacaImage from "./AlpacaImage";
 import AlpacaButtons from "./AlpacaButtons";
+import AlpacaActions from "./AlpacaActions";
+import download from "downloadjs";
+import * as htmlToImage from "html-to-image";
 
 const Alpaca = () => {
   const [config, setConfig] = useState(alpacaConfig);
@@ -93,6 +96,13 @@ const Alpaca = () => {
     // eslint-disable-next-line
   }, []);
 
+  const downloadImage = () => {
+    const alpacaImageElement = document.getElementById("AlpacaImageContainer");
+    htmlToImage.toPng(alpacaImageElement).then((dataURL) => {
+      download(dataURL, "alpacaImage.png");
+    });
+  };
+
   const alpacaAttr = {
     bg,
     neck,
@@ -107,7 +117,10 @@ const Alpaca = () => {
 
   return (
     <main>
-      <AlpacaImage attr={alpacaAttr} />
+      <div className="Container">
+        <AlpacaImage attr={alpacaAttr} />
+        <AlpacaActions downloadImage={downloadImage} />
+      </div>
       <div className="Container">
         <div className="Options">
           <span>Accessorize the Alpaca's</span>

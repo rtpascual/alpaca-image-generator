@@ -4,7 +4,7 @@ import "./AlpacaImage.css";
 const AlpacaImage = ({ attr }) => {
   const { bg, neck, nose, mouth, eyes, hair, leg, ears, acc } = attr;
   return (
-    <div className="AlpacaImageContainer">
+    <div className="AlpacaImageContainer" id="AlpacaImageContainer">
       <img src={bg} alt="Alpaca Background" className="AlpacaBackground" />
       <img src={neck} alt="Alpaca Neck" className="AlpacaNeck" />
       <img src={nose} alt="Alpaca Nose" className="AlpacaNose" />
