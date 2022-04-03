@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Alpaca Image Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Based off of [this project from DevProjects](https://www.codementor.io/projects/web/alpaca-image-generator-website-ce2oc0eus8).
 
 ## Available Scripts
 
