@@ -4,6 +4,10 @@ main {
   width: 80%;
 }
 
+.Container {
+  margin-left: 5rem;
+}
+
 .Container span {
   text-transform: uppercase;
   font-weight: 800;

@@ -12,7 +12,8 @@
   left: 0;
 }
 
-.AlpacaEyes {
+.AlpacaEyes,
+.AlpacaAcc {
   z-index: 5;
 }
 
@@ -20,17 +21,16 @@
   z-index: 4;
 }
 
-.AlpacaAcc,
 .AlpacaMouth {
   z-index: 3;
 }
 
-.AlpacaEars,
+.AlpacaNeck,
 .AlpacaNose {
   z-index: 2;
 }
 
-.AlpacaNeck,
+.AlpacaEars,
 .AlpacaLeg {
   z-index: 1;
 }

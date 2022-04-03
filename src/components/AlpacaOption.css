@@ -1,0 +1,27 @@
+.AlpacaOption {
+  height: fit-content;
+  width: fit-content;
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 1.5rem;
+  color: var(--secondary-color);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 0.25rem;
+}
+
+.AlpacaOption:hover {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.AlpacaOption.Selected {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--bg-color);
+}

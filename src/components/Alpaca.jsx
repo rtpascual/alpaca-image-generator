@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import "./Alpaca.css";
 import { alpacaConfig } from "../utils/alpacaConfig";
 import { getImage } from "../utils/getImage";
-import AlpacaButton from "./AlpacaButton";
+import AlpacaOption from "./AlpacaOption";
 import AlpacaImage from "./AlpacaImage";
+import AlpacaButtons from "./AlpacaButtons";
 
 const Alpaca = () => {
   const [config, setConfig] = useState(alpacaConfig);
@@ -112,17 +113,16 @@ const Alpaca = () => {
           <span>Accessorize the Alpaca's</span>
           <div className="OptionsButtons">
             {config.map((attr) => (
-              <AlpacaButton key={attr.id} attr={attr} myClick={setOptionItem} />
+              <AlpacaOption key={attr.id} attr={attr} myClick={setOptionItem} />
             ))}
           </div>
         </div>
         <div className="Styles">
-          <span>Style</span>
-          <div className="OptionsButtons">
-            {option.items.map((attr) => (
-              <AlpacaButton key={attr.id} attr={attr} myClick={changeImage} />
-            ))}
-          </div>
+          <AlpacaButtons
+            key={option.id}
+            attributes={option}
+            myClick={changeImage}
+          />
         </div>
       </div>
     </main>
