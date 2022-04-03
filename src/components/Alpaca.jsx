@@ -8,6 +8,7 @@ import AlpacaButtons from "./AlpacaButtons";
 import AlpacaActions from "./AlpacaActions";
 import download from "downloadjs";
 import * as htmlToImage from "html-to-image";
+import randomize from "../utils/randomize";
 
 const Alpaca = () => {
   const [config, setConfig] = useState(alpacaConfig);
@@ -103,6 +104,11 @@ const Alpaca = () => {
     });
   };
 
+  const randomizeImage = () => {
+    const randomAlpacaConfig = randomize();
+    setConfig(randomAlpacaConfig);
+  };
+
   const alpacaAttr = {
     bg,
     neck,
@@ -119,7 +125,10 @@ const Alpaca = () => {
     <main>
       <div className="Container">
         <AlpacaImage attr={alpacaAttr} />
-        <AlpacaActions downloadImage={downloadImage} />
+        <AlpacaActions
+          downloadImage={downloadImage}
+          randomizeImage={randomizeImage}
+        />
       </div>
       <div className="Container">
         <div className="Options">
