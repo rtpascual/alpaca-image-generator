@@ -1,5 +1,7 @@
 # Alpaca Image Generator
 
+My attempt at this project with the following info stated below.
+
 ## Requirements
 
 - A website to let you customize your own alpaca profile picture (or desired image)
