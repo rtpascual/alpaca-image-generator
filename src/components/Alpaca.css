@@ -6,6 +6,11 @@ main {
 
 .Container {
   margin-left: 5rem;
+  text-align: left;
+}
+
+.Container > div {
+  margin-bottom: 2rem;
 }
 
 .Container span {

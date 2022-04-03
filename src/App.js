@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Alpaca from "./components/Alpaca";
 
