@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import "./Alpaca.css";
 import { alpacaConfig } from "../utils/alpacaConfig";
 import { getImage } from "../utils/getImage";
+import { randomize } from "../utils/randomize";
 import AlpacaOption from "./AlpacaOption";
 import AlpacaImage from "./AlpacaImage";
 import AlpacaButtons from "./AlpacaButtons";
 import AlpacaActions from "./AlpacaActions";
 import download from "downloadjs";
 import * as htmlToImage from "html-to-image";
-import randomize from "../utils/randomize";
 
 const Alpaca = () => {
   const [config, setConfig] = useState(alpacaConfig);

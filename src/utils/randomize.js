@@ -1,4 +1,4 @@
-import alpacaConfig from "./alpacaConfig";
+import { alpacaConfig } from "./alpacaConfig";
 
 const getRandomItem = (arr) => {
   return Math.floor(Math.random() * arr.length);
