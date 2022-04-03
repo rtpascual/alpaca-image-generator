@@ -1,6 +1,23 @@
 # Alpaca Image Generator
 
-Based off of [this project from DevProjects](https://www.codementor.io/projects/web/alpaca-image-generator-website-ce2oc0eus8).
+## Requirements
+
+- A website to let you customize your own alpaca profile picture (or desired image)
+- Customization panel
+- Randomize feature
+- Download generated image feature
+
+The following GIF shows one way to implement the UI. Feel free to interpret the requirements however you'd like!
+
+![Alpaca_demo_-_10.gif](https://ucarecdn.com/7a261f5a-d79c-4145-9e6d-bf4d4a8be636/)
+
+## Suggested Implementation
+
+- Get your image assets ready. You could use the alpaca images [we provided](https://ucarecdn.com/b2200aac-7cc6-44ff-a2cb-6fd7861d683d/alpacageneratorassets.zip) or use your own ones for your image generator.
+- Prepare your preferred front end stack. We recommend using tools like [Create React App](https://create-react-app.dev/) or [Vue CLI](https://cli.vuejs.org/) if you want to have a quick setup.
+- Create an alpaca (image) preview UI
+- Add list of buttons for customizing your alpaca (image)
+- Add randomized alpaca feature
 
 ## Available Scripts
 
