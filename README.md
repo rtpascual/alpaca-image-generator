@@ -1,6 +1,6 @@
 # Alpaca Image Generator
 
-This project is based off of [this project from DevProjects](https://www.codementor.io/projects/web/alpaca-image-generator-website-ce2oc0eus8).
+Based off of [this project from DevProjects](https://www.codementor.io/projects/web/alpaca-image-generator-website-ce2oc0eus8).
 
 ## Available Scripts
 
