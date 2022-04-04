@@ -107,6 +107,18 @@ const Alpaca = () => {
   const randomizeImage = () => {
     const randomAlpacaConfig = randomize();
     setConfig(randomAlpacaConfig);
+
+    for (let optionIndex in randomAlpacaConfig) {
+      let option = randomAlpacaConfig[optionIndex];
+
+      let selectedAttrIndex = option.items.findIndex((item) => {
+        return item.selected === true;
+      });
+
+      let selectedAttr = option.items[selectedAttrIndex];
+
+      changeImage(option, selectedAttr);
+    }
   };
 
   const alpacaAttr = {
