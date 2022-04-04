@@ -5,10 +5,16 @@ const getRandomItem = (arr) => {
 };
 
 export const randomize = () => {
-  return [...alpacaConfig].map((option) => {
-    return {
-      ...option,
-      items: getRandomItem(option.items),
-    };
-  });
+  let configClone = [...alpacaConfig];
+
+  for (let optionIndex in configClone) {
+    configClone[optionIndex].items.forEach((attr) => {
+      attr.selected = false;
+    });
+    configClone[optionIndex].items[
+      getRandomItem(configClone[optionIndex].items)
+    ].selected = true;
+  }
+
+  return configClone;
 };
