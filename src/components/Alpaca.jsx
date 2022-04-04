@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Alpaca.css";
 import { alpacaConfig } from "../utils/alpacaConfig";
 import { getImage } from "../utils/getImage";
+import { randomize } from "../utils/randomize";
 import AlpacaOption from "./AlpacaOption";
 import AlpacaImage from "./AlpacaImage";
 import AlpacaButtons from "./AlpacaButtons";
@@ -103,6 +104,23 @@ const Alpaca = () => {
     });
   };
 
+  const randomizeImage = () => {
+    const randomAlpacaConfig = randomize();
+    setConfig(randomAlpacaConfig);
+
+    for (let optionIndex in randomAlpacaConfig) {
+      let option = randomAlpacaConfig[optionIndex];
+
+      let selectedAttrIndex = option.items.findIndex((item) => {
+        return item.selected === true;
+      });
+
+      let selectedAttr = option.items[selectedAttrIndex];
+
+      changeImage(option, selectedAttr);
+    }
+  };
+
   const alpacaAttr = {
     bg,
     neck,
@@ -119,7 +137,10 @@ const Alpaca = () => {
     <main>
       <div className="Container">
         <AlpacaImage attr={alpacaAttr} />
-        <AlpacaActions downloadImage={downloadImage} />
+        <AlpacaActions
+          downloadImage={downloadImage}
+          randomizeImage={randomizeImage}
+        />
       </div>
       <div className="Container">
         <div className="Options">
