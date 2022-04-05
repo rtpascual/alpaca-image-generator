@@ -1,13 +1,13 @@
 import React from "react";
-import "./AlpacaActions.css";
+/* import "./AlpacaActions.css"; */
 
 const AlpacaActions = ({ downloadImage, randomizeImage }) => {
   return (
-    <div className="AlpacaActions">
-      <button className="Download" onClick={() => downloadImage()}>
+    <div className="flex flex-col md:flex-row place-content-evenly gap-2">
+      <button className="btn-action" onClick={() => downloadImage()}>
         Download
       </button>
-      <button className="Randomize" onClick={() => randomizeImage()}>
+      <button className="btn-action" onClick={() => randomizeImage()}>
         Randomize
       </button>
     </div>
