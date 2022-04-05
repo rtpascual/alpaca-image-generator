@@ -2,7 +2,7 @@ import React from "react";
 
 const AlpacaButtons = ({ attributes, myClick }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col gap-2">
       <span className="section-title">Style</span>
       <div className="btn-container">
         {attributes.items.map((attr) => (

@@ -142,7 +142,7 @@ const Alpaca = () => {
         />
       </div>
       <div className="w-full md:w-2/5">
-        <div className="mb-6">
+        <div className="flex flex-col gap-2 mb-6">
           <span className="section-title">Accessorize the Alpaca's</span>
           <div className="btn-container">
             {config.map((attr) => (
