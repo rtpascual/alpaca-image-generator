@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./Alpaca.css";
 import { alpacaConfig } from "../utils/alpacaConfig";
 import { getImage } from "../utils/getImage";
 import { randomize } from "../utils/randomize";
@@ -134,24 +133,24 @@ const Alpaca = () => {
   };
 
   return (
-    <main>
-      <div className="Container">
+    <main className="flex flex-col md:flex-row place-content-evenly text-left">
+      <div className="w-full md:w-2/5">
         <AlpacaImage attr={alpacaAttr} />
         <AlpacaActions
           downloadImage={downloadImage}
           randomizeImage={randomizeImage}
         />
       </div>
-      <div className="Container">
-        <div className="Options">
-          <span>Accessorize the Alpaca's</span>
-          <div className="OptionsButtons">
+      <div className="w-full md:w-2/5">
+        <div className="flex flex-col gap-2 mb-6">
+          <span className="section-title">Accessorize the Alpaca's</span>
+          <div className="btn-container">
             {config.map((attr) => (
               <AlpacaOption key={attr.id} attr={attr} myClick={setOptionItem} />
             ))}
           </div>
         </div>
-        <div className="Styles">
+        <div>
           <AlpacaButtons
             key={option.id}
             attributes={option}

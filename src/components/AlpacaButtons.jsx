@@ -1,14 +1,13 @@
 import React from "react";
-import "./AlpacaButtons.css";
 
 const AlpacaButtons = ({ attributes, myClick }) => {
   return (
-    <div>
-      <span>Style</span>
-      <div className="OptionsButtons">
+    <div className="flex flex-col gap-2">
+      <span className="section-title">Style</span>
+      <div className="btn-container">
         {attributes.items.map((attr) => (
           <button
-            className={`AlpacaButton ${attr.selected ? " Selected" : ""}`}
+            className={`btn-option ${attr.selected ? " btn-selected" : ""}`}
             key={attr.id}
             onClick={() => myClick(attributes, attr)}
           >
