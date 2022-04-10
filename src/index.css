@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  body {
+    @apply bg-sky-50;
+  }
+
   .section-title {
     @apply text-sky-900 uppercase font-bold;
   }
