@@ -91,7 +91,7 @@ export const alpacaConfig = [
       },
       {
         id: 4,
-        label: "Tile Backward",
+        label: "Tilt Backward",
         filename: "tilt-backward",
         selected: false,
       },
