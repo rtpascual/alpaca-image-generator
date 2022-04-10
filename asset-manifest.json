@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alpaca-image-generator/static/css/main.5b7f979a.css",
-    "main.js": "/alpaca-image-generator/static/js/main.c583f3e6.js",
+    "main.css": "/alpaca-image-generator/static/css/main.8e5cbec1.css",
+    "main.js": "/alpaca-image-generator/static/js/main.64d7db5e.js",
     "static/js/1368.9fcad095.chunk.js": "/alpaca-image-generator/static/js/1368.9fcad095.chunk.js",
     "static/js/1668.0f6cca51.chunk.js": "/alpaca-image-generator/static/js/1668.0f6cca51.chunk.js",
     "static/js/6695.f3dfcb20.chunk.js": "/alpaca-image-generator/static/js/6695.f3dfcb20.chunk.js",
@@ -58,12 +58,12 @@
     "static/js/3847.6c81fd60.chunk.js": "/alpaca-image-generator/static/js/3847.6c81fd60.chunk.js",
     "static/js/787.21e19f55.chunk.js": "/alpaca-image-generator/static/js/787.21e19f55.chunk.js",
     "index.html": "/alpaca-image-generator/index.html",
-    "main.5b7f979a.css.map": "/alpaca-image-generator/static/css/main.5b7f979a.css.map",
-    "main.c583f3e6.js.map": "/alpaca-image-generator/static/js/main.c583f3e6.js.map",
+    "main.8e5cbec1.css.map": "/alpaca-image-generator/static/css/main.8e5cbec1.css.map",
+    "main.64d7db5e.js.map": "/alpaca-image-generator/static/js/main.64d7db5e.js.map",
     "787.21e19f55.chunk.js.map": "/alpaca-image-generator/static/js/787.21e19f55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b7f979a.css",
-    "static/js/main.c583f3e6.js"
+    "static/css/main.8e5cbec1.css",
+    "static/js/main.64d7db5e.js"
   ]
 }
