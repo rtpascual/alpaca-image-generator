@@ -133,15 +133,15 @@ const Alpaca = () => {
   };
 
   return (
-    <main className="flex flex-col md:flex-row place-content-evenly text-left">
-      <div className="w-full md:w-2/5">
+    <main className="flex flex-col lg:flex-row place-content-evenly text-left">
+      <div className="w-full lg:w-2/5">
         <AlpacaImage attr={alpacaAttr} />
         <AlpacaActions
           downloadImage={downloadImage}
           randomizeImage={randomizeImage}
         />
       </div>
-      <div className="w-full md:w-2/5">
+      <div className="w-full lg:w-2/5">
         <div className="flex flex-col gap-2 mb-6">
           <span className="section-title">Accessorize the Alpaca's</span>
           <div className="btn-container">
