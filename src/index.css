@@ -20,7 +20,7 @@
   }
 
   .btn-option {
-    @apply bg-transparent text-sky-300 hover:text-sky-900 uppercase py-2 px-4 border-solid border-2 border-sky-300 hover:border-sky-900 rounded-2xl;
+    @apply bg-transparent text-sky-300 hover:text-sky-900 capitalize py-2 px-4 border-solid border-2 border-sky-300 hover:border-sky-900 rounded-2xl;
   }
 
   .btn-option.btn-selected {
