@@ -134,7 +134,7 @@ const Alpaca = () => {
 
   return (
     <main className="flex flex-col lg:flex-row place-content-evenly text-left">
-      <div className="w-full lg:w-2/5">
+      <div className="w-full mb-6 lg:mb-0 lg:w-2/5">
         <AlpacaImage attr={alpacaAttr} />
         <AlpacaActions
           downloadImage={downloadImage}
