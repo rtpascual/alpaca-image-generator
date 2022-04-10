@@ -31,16 +31,3 @@
     @apply row-start-1 row-end-1 col-start-1 col-end-1 w-full;
   }
 }
-
-/* CSS variables 
-:root {
-  --primary-color: #245879;
-  --secondary-color: #779fb8;
-  --font-color: #1d3557;
-  --bg-color: #d8dad8da;
-}
-
-body {
-  background-color: var(--bg-color);
-}
-*/

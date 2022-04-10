@@ -1,5 +1,4 @@
 import React from "react";
-/* import "./AlpacaImage.css"; */
 
 const AlpacaImage = ({ attr }) => {
   const { bg, neck, nose, mouth, eyes, hair, leg, ears, acc } = attr;

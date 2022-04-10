@@ -1,5 +1,4 @@
 import React from "react";
-/* import "./AlpacaActions.css"; */
 
 const AlpacaActions = ({ downloadImage, randomizeImage }) => {
   return (
